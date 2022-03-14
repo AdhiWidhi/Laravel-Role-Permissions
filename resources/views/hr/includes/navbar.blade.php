@@ -29,7 +29,7 @@
                                 href="{{ route('hr.gaji') }}">Gaji</a>
                         </li>
                     @endcan
-                    @can('show absensi')s
+                    @can('show absensi')
                         <li class="nav-item">
                             <a class="nav-link {{ request()->routeIs('hr.absensi') ? 'active' : '' }}"
                                 href="{{ route('hr.absensi') }}">absensi</a>

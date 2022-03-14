@@ -39,8 +39,11 @@ Route::group(['middleware' => ['role:super admin|hr|direktur|keuangan']], functi
     Route::get('/hr/karyawan', [KaryawanController::class, 'index'])->name('hr.karyawan')->can('show karyawan');
     Route::get('/hr/dashboard', DashboardController::class)->name('hr.dashboard');
     Route::get('/hr/gaji',[GajiController::class,'index'])->name('hr.gaji')->can('show gaji');
+    Route::get('/hr/gaji/edit',[GajiController::class,'editGaji'])->name('hr.edit.gaji')->can('edit gaji');
+    Route::get('/hr/gaji/print',[GajiController::class,'printGaji'])->name('print gaji')->can('print gaji');
     Route::get('/hr/absensi', [AbsensiController::class, 'index'])->name('hr.absensi')->can('show absensi');
+    Route::get('/hr/absensi/print', [AbsensiController::class, 'print'])->name('printAbsen')->can('print absensi');
     Route::get('/hr/karyawan/create', [KaryawanController::class, 'create'])->name('hr.karyawan.create')->can('create karyawan');
-    Route::get('/hr/karyawan/edit', [KaryawanController::class, 'create'])->name('hr.karyawan.create')->can('edit karyawan');
-    Route::get('/hr/karyawan/delete', [KaryawanController::class, 'create'])->name('hr.karyawan.create')->can('delete karyawan');
+    Route::get('/hr/karyawan/edit', [KaryawanController::class, 'edit'])->name('hr.karyawan.edit')->can('edit karyawan');
+    Route::get('/hr/karyawan/delete', [KaryawanController::class, 'delete'])->name('hr.karyawan.delete')->can('delete karyawan');
 });

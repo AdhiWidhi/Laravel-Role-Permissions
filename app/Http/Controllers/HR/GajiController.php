@@ -14,4 +14,10 @@ class GajiController extends Controller
     public function gajiKaryawan(){
         return view('karyawan.gaji');
     }
+    public function editGaji(){
+        return view('hr.editGaji');
+    }
+    public function printgaji(){
+        return view('keuangan.printgaji');
+    }
 }

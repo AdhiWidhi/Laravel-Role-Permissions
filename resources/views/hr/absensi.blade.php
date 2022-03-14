@@ -3,7 +3,11 @@
 <div class="card">
     <div class="card-body">
         <h5 class="card-title">Absensi</h5>
-        <table class="table">
+        <hr>
+        @can('print absensi')
+            <a href="{{ route('printAbsen') }}" class="btn btn-primary mb-2"><i class="fas fa-print"></i> Print</a>
+        @endcan
+        <table class="table table-bordered">
             <thead>
               <tr>
                 <th scope="col">#</th>

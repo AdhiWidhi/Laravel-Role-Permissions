@@ -13,6 +13,9 @@ class KaryawanController extends Controller
         return view('hr.karyawan');
     }
 
-
+    public function create()
+    {
+        return view('karyawan.create');
+    }
 
 }

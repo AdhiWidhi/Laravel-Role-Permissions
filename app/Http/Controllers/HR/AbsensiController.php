@@ -12,6 +12,9 @@ class AbsensiController extends Controller
         return view('hr.absensi');
     }
 
+    public function print(){
+        return view('hr.absensi-print');
+    }
     public function absensiKaryawan(){
         return view('karyawan.absensi');
     }

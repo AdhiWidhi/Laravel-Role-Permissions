@@ -10,6 +10,7 @@
         <th scope="col">Nama</th>
         <th scope="col">Divisi</th>
         <th scope="col">Gaji</th>
+
       </tr>
     </thead>
     <tbody>
@@ -18,6 +19,7 @@
         <td>Mark</td>
         <td>Web Developer</td>
         <td>Rp. 15.000.000</td>
+
       </tr>
 
     </tbody>

@@ -24,7 +24,7 @@ class AssignRoleSeeder extends Seeder
         //assign hr dan permissions
         $hr = User::find(2);
         $hr->assignRole('hr');
-        $hr->givePermissionTo('show karyawan','create karyawan','edit karyawan','delete karyawan','edit gaji','print absensi');
+        $hr->givePermissionTo('show karyawan','create karyawan','edit karyawan','delete karyawan','edit gaji','print absensi','show gaji', 'show absensi');
 
         //assign keuangan dan permissions
         $keuangan = User::find(3);

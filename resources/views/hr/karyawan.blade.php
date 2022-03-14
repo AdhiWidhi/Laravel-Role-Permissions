@@ -2,10 +2,13 @@
 @section('content')
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title">Data Karyawan</h5>
+            <h5 class="card-title">Data Karyawan
+            </h5>
+
             <hr>
-            <a href=""></a>
-            <table class="table">
+
+            <table class="table table-bordered">
+                <a href="{{ route('hr.karyawan.create') }}" class="btn btn-primary mb-2"><i class="fas fa-plus"></i> Add data</a>
                 <thead>
                     <tr>
                         <th scope="col">#</th>
