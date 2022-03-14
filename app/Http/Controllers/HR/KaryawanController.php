@@ -4,6 +4,7 @@ namespace App\Http\Controllers\HR;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class KaryawanController extends Controller
 {
@@ -12,12 +13,6 @@ class KaryawanController extends Controller
         return view('hr.karyawan');
     }
 
-    public function absensi()
-    {
-        return view('hr.absensi');
-    }
 
-    public function gaji(){
-        return view('hr.gaji');
-    }
+
 }
